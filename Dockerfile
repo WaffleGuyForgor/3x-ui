@@ -23,5 +23,7 @@ COPY nginx.conf.template /etc/nginx/nginx.conf.template
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
+EXPOSE 8080
+
 # Railway پورت رو از طریق متغیر $PORT تزریق می‌کند
 CMD ["/start.sh"]
